@@ -61,4 +61,68 @@ Targets systems, applications, hardware, and/or software in the supply chain to 
 
 **Domain**: Security and Risk Management, Security Architecture and Engineering, Security Operations
 
---
+---
+
+### Cryptographic Attack
+Affects secure forms of communication between a sender and intended recipient.
+
+| Type | Description |
+|------|------|
+| Birthday | Exploits probability to find hash collisions |
+| Collision | Forces two inputs to produce the same hash |
+| Downgrade | Forces system to use weaker encryption |
+
+**Domain**: Communication and Network Security
+
+---
+
+## Threat Actor Types
+
+### Advanced Persistent Threats (APTs)
+- Research targets in advance (large corporations, government entities)
+- Can remain undetected for extended periods
+- **Motivations**: Damaging critical infrastructure, gaining intellectual property
+
+### Insider Threats
+- Abuse authorized access to harm organization
+- **Motivations**: Sabotage, corruption, espionage, unauthorized data leaks
+
+### Hacktivists
+- Driven by political agenda
+- **Motivations**: Demonstrations, propaganda, social change, fame
+
+---
+
+## Hacker Types
+
+| Type | Description |
+|------|------|
+| Authorized (Ethical) | Follows code of ethics; conducts legal risk evaluations |
+| Semi-Authorized | Researchers who find but don't exploit vulnerabilities |
+| Unauthorized (Unethical) | Malicious actors; collect and sell data for financial gain |
+
+### Other Hacker Motivations
+
+**New/Unskilled Threat Actors**
+- Learn and enhance hacking skills
+- Seek revenge
+- Exploit weaknesses using existing malware and scripts
+
+**Contract Hackers**
+- Work on both legal and illegal tasks for pay
+- Can be considered ethical or unethical depending on the task
+
+**Vigilantes**
+- Goal is to protect the world from unethical hackers
+
+---
+
+## Key Takeaway
+> Threat actors are defined by **malicious intent**.  
+> Hackers are defined by **technical skills and motivations**.  
+> Understanding both helps better protect organizations from attacks.
+
+---
+
+*Course 1/9: Foundations of Cybersecurity*  
+*Google Cybersecurity Professional Certificate*
