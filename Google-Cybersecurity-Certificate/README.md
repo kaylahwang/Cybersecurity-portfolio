@@ -23,4 +23,7 @@
 ---
 
 ## Write-ups & Labs
-- [Course 1 - Phishing Email Analysis](./Course1-Foundations-of-Cybersecurity/Phishing-Analysis/)
+
+### Course 1 - Foundations of Cybersecurity
+- [Module 1 - Foundations & Phishing Analysis](./Course1-Foundations-of-Cybersecurity/Module1-Foundations/)
+- [Module 2 - Common Attacks](./Course1-Foundations-of-Cybersecurity/Module2-Evolution-of-Cybersecurity/)
