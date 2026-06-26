@@ -1,160 +1,145 @@
-# Module 4 – Security Analyst Tools
-
-## Overview
-
-Security analysts use a variety of tools and operational procedures to monitor systems, detect threats, investigate incidents, and protect organizational assets.
-
-Understanding how these tools work is essential for responding to cybersecurity incidents efficiently and preserving digital evidence during investigations.
+# Study Notes: Security Monitoring & Core Concepts
 
 ---
 
-# Security Information and Event Management (SIEM)
+## 🔹 Security Information and Event Management (SIEM)
 
-## What is SIEM?
+:contentReference[oaicite:0]{index=0}  
 
-A Security Information and Event Management (SIEM) system collects, aggregates, and analyzes log data from multiple devices and applications across an organization.
+### Definition:
+An application that collects and analyzes log data to monitor security events.
 
-Rather than manually reviewing thousands of logs, analysts can use SIEM platforms to identify suspicious activities and receive automated alerts.
+### Purpose:
+- Detect security incidents
+- Centralize log data
+- Support real-time monitoring
 
-### Primary Functions
-
-* Collect log data from multiple sources
-* Correlate security events
-* Detect threats and suspicious activities
-* Generate real-time alerts
-* Support incident investigations
-
-### Common Features
-
-* Centralized log management
-* Dashboards and visualizations
-* Search and filtering
-* Alerting
-* Reporting
-
-### Hosting Options
-
-**On-Premises**
-
-* Greater control
-* Requires more maintenance
-* Managed internally
-
-**Cloud-Based**
-
-* Easier deployment
-* Lower maintenance
-* Scalable infrastructure
+### GRC Role:
+- Detective control mechanism
+- Supports audit and compliance requirements
 
 ---
 
-# Network Protocol Analyzer (Packet Sniffer)
+## 🔹 Logs
 
-## What is a Packet Sniffer?
+### Definition:
+A record of events that occur within an organization’s systems.
 
-A network protocol analyzer captures and analyzes network traffic traveling across a network.
+### Purpose:
+- Track system activity
+- Identify security issues
+- Provide audit evidence
 
-It enables security analysts to examine packets, troubleshoot network problems, and investigate suspicious communications.
-
-### Common Uses
-
-* Network troubleshooting
-* Traffic analysis
-* Detecting malicious activity
-* Incident investigations
-* Protocol analysis
-
-### Example Tool
-
-* Wireshark
+### GRC Role:
+- Core audit trail mechanism
+- Supports accountability and compliance
 
 ---
 
-# Security Playbooks
+## 🔹 Network Protocol Analyzer (Packet Sniffer)
 
-## What is a Playbook?
+:contentReference[oaicite:1]{index=1}  
 
-A playbook is a documented set of procedures that guides security analysts through specific operational or incident response tasks.
+### Definition:
+A tool that captures and analyzes network traffic.
 
-Playbooks help ensure that security incidents are handled consistently, efficiently, and according to organizational policies.
+### Purpose:
+- Inspect data packets
+- Detect abnormal network activity
 
-### Benefits
-
-* Standardized response procedures
-* Faster incident handling
-* Reduced human error
-* Improved collaboration
-* Compliance with organizational policies
-
----
-
-# Chain of Custody
-
-## Definition
-
-Chain of custody is the documented process of tracking the possession, handling, and transfer of digital evidence throughout an investigation.
-
-Maintaining a complete chain of custody helps ensure that evidence remains trustworthy and legally admissible.
-
-### Documentation Typically Includes
-
-* Who collected the evidence
-* When it was collected
-* Where it was stored
-* Why it was accessed
-* Every transfer of possession
+### GRC Role:
+- Supports forensic investigations
+- Provides supporting evidence for incidents
 
 ---
 
-# Protecting and Preserving Evidence
+## 🔹 Intrusion Detection System (IDS)
 
-Digital evidence can be fragile and easily altered if handled improperly.
+:contentReference[oaicite:2]{index=2}  
 
-Security analysts should preserve evidence before beginning an investigation.
+### Definition:
+An application that monitors system activity and alerts on intrusions.
 
-### Best Practices
+### Purpose:
+- Detect unauthorized access
+- Monitor system behavior
 
-* Create forensic copies before analysis
-* Avoid modifying original evidence
-* Maintain proper documentation
-* Follow organizational procedures
-
----
-
-# Order of Volatility
-
-## Definition
-
-The Order of Volatility is the recommended sequence for collecting digital evidence, beginning with data that is most likely to disappear first.
-
-Volatile data should always be preserved before shutting down or rebooting a system.
-
-### Examples of Volatile Data
-
-* RAM (Memory)
-* Running processes
-* Network connections
-* System cache
-
-Less volatile data includes:
-
-* Hard drives
-* Backup media
-* Archived logs
+### GRC Role:
+- Detective control for risk monitoring
 
 ---
 
-# Key Takeaways
+## 🔹 Programming
 
-* SIEM platforms centralize log collection and automate threat detection.
-* Packet sniffers capture and analyze network traffic for troubleshooting and investigations.
-* Playbooks provide standardized procedures for responding to security incidents.
-* Chain of custody protects the integrity and admissibility of digital evidence.
-* Digital evidence should always be preserved before analysis.
-* Following the Order of Volatility helps prevent the loss of critical forensic evidence.
+### Definition:
+A process of creating instructions for a computer to execute tasks.
+
+### Purpose:
+- Automate repetitive tasks
+- Improve efficiency
+
+### GRC Role:
+- Reduces operational risk
+- Supports control automation
 
 ---
 
-# Personal Reflection
+## 🔹 SQL (Structured Query Language)
 
-This module introduced the operational tools and procedures commonly used by security analysts. I learned that cybersecurity involves more than identifying threats—it also requires structured investigation processes, proper evidence handling, and consistent incident response. Concepts such as SIEM, playbooks, chain of custody, and the Order of Volatility highlighted the importance of disciplined procedures in digital forensics and security operations.
+:contentReference[oaicite:3]{index=3}  
+
+### Definition:
+A language used to interact with databases.
+
+### Purpose:
+- Query information
+- Manage structured data
+
+---
+
+## 🔹 Linux
+
+:contentReference[oaicite:4]{index=4}  
+
+### Definition:
+An open-source operating system.
+
+### Purpose:
+- System operations
+- Log analysis environment
+
+---
+
+## 🔹 Order of Volatility
+
+### Definition:
+A sequence that defines which data must be preserved first in a system.
+
+### Purpose:
+- Prevent data loss during investigations
+- Prioritize evidence collection
+
+### GRC Role:
+- Ensures forensic integrity
+
+---
+
+## 🔹 Evidence Handling
+
+### Protecting and Preserving Evidence:
+Proper handling of fragile and volatile digital evidence.
+
+### Chain of Custody (concept linked):
+Ensures evidence integrity and traceability.
+
+---
+
+# 🧠 Key Insight
+
+Security tools and processes in this module support:
+
+- Monitoring
+- Detection
+- Investigation
+- Compliance
+- Evidence preservation
