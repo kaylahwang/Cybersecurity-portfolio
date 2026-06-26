@@ -58,5 +58,5 @@ By combining **9+ years of professional industry experience** and **ISC² Certif
 
 ## ✉️ Contact & Professional Network
 
-- **LinkedIn:** [Your LinkedIn Profile URL Here]
-- **Email:** [Your Email Address Here]
+- **LinkedIn:** [https://www.linkedin.com/in/heerakaylahwang/]
+- **Email:** [kaylaforstudy@gmail.com]
