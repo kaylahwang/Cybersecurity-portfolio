@@ -1,47 +1,40 @@
-# Tool Mapping (GRC Perspective)
+# Concept Layers (Understanding Map)
 
 ---
 
-## Monitoring Tools
-
-- SIEM systems → detect and monitor security events
-:contentReference[oaicite:5]{index=5}  
-
----
-
-## Network Analysis Tools
-
-- Packet sniffers → capture and analyze network traffic
-:contentReference[oaicite:6]{index=6}  
+## 🔵 Data Layer
+- Database
+- Data point
+- SQL
 
 ---
 
-## Detection Tools
-
-- IDS → detect suspicious system activity
-:contentReference[oaicite:7]{index=7}  
-
----
-
-## Operating Systems
-
-- Linux → system operations and analysis environment
-:contentReference[oaicite:8]{index=8}  
+## 🟢 System Layer
+- Operating systems (Linux)
+- Programming
 
 ---
 
-## Data Tools
-
-- SQL → database interaction and querying
-:contentReference[oaicite:9]{index=9}  
+## 🟡 Security Monitoring Layer
+- SIEM
+- Logs
+- IDS
 
 ---
 
-## GRC Interpretation
+## 🔴 Network Layer
+- Packet sniffers
 
-All tools support:
+---
 
-- Security monitoring
-- Risk detection
-- Evidence collection
-- Compliance support
+## ⚫ Evidence Layer
+- Order of volatility
+- Protecting and preserving evidence
+
+---
+
+# 🧠 Final Insight
+
+Cybersecurity systems operate in layers:
+
+Data → System → Network → Security → Evidence
