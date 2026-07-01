@@ -45,6 +45,7 @@ When defense systems fail, organizations suffer critical consequences:
 The NIST RMF provides a structured, 7-step process to develop risk-management processes and safeguard assets:
 ```text
 [Prepare] ➔ [Categorize] ➔ [Select] ➔ [Implement] ➔ [Assess] ➔ [Authorize] ➔ [Monitor]
+```
 
 Prepare: Related to activities that are necessary to manage security and privacy risks before a breach occurs.
 
@@ -60,7 +61,7 @@ Authorize: (6th Step) Officially approving a system to operate and being account
 
 Monitor: (7th Step) Continuous awareness of how systems are operating and managing ongoing organizational risks.
 
-🛠️ Managing Common Threats, Risks, and Vulnerabilities
+### 🛠️ Managing Common Threats, Risks, and Vulnerabilities
 1. Risk Management Strategies
 Organizations protect assets using four distinct approaches to risk:
 
@@ -81,12 +82,12 @@ Advanced Persistent Threats (APTs): A threat actor maintains unauthorized access
 
 Legacy Systems: Old, outdated systems or workstations that can still impact assets.
 
-🛑 Common Attack Tactics
+### 🛑 Common Attack Tactics
 Ransomware: A malicious attack where threat actors encrypt an organization’s data and demand payment to restore access.
 
 Social Engineering: A manipulation technique that exploits human error to gain private information, access, or valuables.
 
-3. Critical Real-World Vulnerabilities
+## 3. Critical Real-World Vulnerabilities
 ProxyLogon: Pre-authenticated vulnerability affecting Microsoft Exchange servers.
 
 ZeroLogon: Vulnerability in Microsoft’s Netlogon authentication protocol.
