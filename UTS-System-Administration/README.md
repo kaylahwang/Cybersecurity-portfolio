@@ -2,8 +2,6 @@
 
 ## Subject Information
 
-**31338 Network Servers / 32520 Systems Administration**
-
 This repository contains lecture summaries, practical lab exercises, command references, and learning journals completed throughout the semester.
 
 ---
