@@ -1,73 +1,35 @@
-# Week 1 – Introduction and System Startup
-
-## Overview
-
-This week introduced the role of a system administrator and the Linux startup process, including firmware, boot loaders, the kernel, and systemd.
-
----
+# Week 1 - Introduction and System Startup
 
 ## System Administrator Responsibilities
 
-Typical system administration tasks include:
-
 - Server installation and configuration
-- User account management
+- User management
 - Backup and recovery
 - Security monitoring
-- Performance monitoring
-- Troubleshooting and maintenance
-- Applying updates and security patches
+- Troubleshooting
+- System maintenance
 
 ---
 
 ## Linux Boot Process
 
-The Linux startup sequence follows these stages:
-
-```text
 Hardware
 → BIOS/UEFI
-→ Boot Loader (GRUB2)
-→ Kernel
-→ systemd/init
-→ Services
-```
-
-### BIOS / UEFI
-
-- Performs hardware initialization
-- Runs POST (Power-On Self-Test)
-- Locates a bootable device
-
-### Boot Loader
-
-- Loads the operating system kernel
-- GRUB2 is the most common Linux boot loader
-
-### Kernel
-
-- Loads into memory
-- Mounts the root filesystem
-- Starts systemd
-
-### systemd
-
-- First userspace process started by Linux
-- Always runs with PID 1
-- Starts and manages system services
+→ GRUB2 Boot Loader
+→ Linux Kernel
+→ systemd
+→ System Services
 
 ---
 
 ## BIOS vs UEFI
 
 ### BIOS
-
 - Traditional firmware
-- Uses MBR partitioning
+- Uses MBR
 
 ### UEFI
-
-- Modern firmware standard
+- Modern firmware
 - Uses EFI System Partition (ESP)
 - Supports multiple boot loaders
 
@@ -75,33 +37,19 @@ Hardware
 
 ## GRUB2
 
-GRUB2 is the default Linux boot loader.
+Main functions:
 
-Key functions:
-
-- Load Linux kernels
-- Provide boot menus
+- Load Linux kernel
 - Support multiple operating systems
-
-Common configuration file:
-
-```text
-/boot/grub2/grub.cfg
-```
+- Provide boot menu
 
 ---
 
-## systemd Service Management
+## systemd
 
-Useful commands:
-
-```bash
-systemctl status
-systemctl start
-systemctl stop
-systemctl enable
-systemctl disable
-```
+- First process started by Linux
+- PID = 1
+- Manages startup services
 
 Common targets:
 
@@ -109,34 +57,12 @@ Common targets:
 - multi-user.target
 - rescue.target
 - emergency.target
-- reboot.target
 
 ---
 
-## Log Management
+## System Logs
 
-Important commands:
+Kernel logs:
 
 ```bash
 dmesg
-journalctl
-journalctl -k
-```
-
-Important log location:
-
-```text
-/var/log/messages
-```
-
-Logs are useful when diagnosing startup and system issues.
-
----
-
-## Key Takeaways
-
-- Linux startup follows a structured boot process.
-- BIOS/UEFI initializes hardware before booting.
-- GRUB2 loads the Linux kernel.
-- systemd manages services and startup targets.
-- Log files are essential for troubleshooting.
