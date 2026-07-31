@@ -1,86 +1,375 @@
 # Module 4 - Security Hardening
 
-## What I Learned
+## Overview
 
-This module focused on reducing organizational risk through security hardening and cloud security best practices.
-
-I learned how security teams protect cloud environments, manage access controls, assess risks, and apply structured cybersecurity frameworks.
+This module focused on strengthening authentication systems, operating systems, and network infrastructure through security hardening techniques. The module covered brute force attack prevention, secure testing environments, defense-in-depth architecture, network monitoring, and security risk assessment.
 
 ---
 
-## Cloud Security
+# Authentication Security
 
-### Key Concepts
+## Brute Force Attacks
 
-- Identity and Access Management (IAM)
-- Cloud Configuration Security
-- Attack Surface Management
-- Visibility and Monitoring
-- Shared Responsibility Model
+A brute force attack is a trial-and-error method used to gain unauthorized access by repeatedly guessing usernames and passwords.
 
-### Key Lesson
+### Types of Brute Force Attacks
 
-Cloud providers secure the infrastructure, while organizations remain responsible for securing their own data, users, and configurations.
+#### Simple Brute Force Attack
 
----
+Attempts random combinations of usernames and passwords until successful.
 
-## Security Hardening
+#### Dictionary Attack
 
-### What I Learned
+Uses predefined wordlists containing:
 
-Security hardening reduces vulnerabilities through:
+- Common passwords
+- Previously leaked credentials
+- Frequently reused passwords
 
-- Secure configurations
-- Access controls
-- Monitoring
-- Patch management
-- Protective technologies
+### Risks
 
-### Why It Matters
-
-Every service and resource increases potential exposure to cyber threats.
+- Account compromise
+- Unauthorized access
+- Privilege escalation
+- Data breaches
 
 ---
 
-## NIST Cybersecurity Framework
+## Authentication Hardening
 
-### Five Core Functions
+### Hashing
 
-1. Identify
-2. Protect
-3. Detect
-4. Respond
-5. Recover
+Hashing converts a password into a fixed, irreversible value.
 
-### Key Lesson
+Benefits:
 
-Cybersecurity is not only prevention. Effective response and recovery are equally important.
+- Protects password storage
+- Prevents plaintext exposure
+
+### Salting
+
+Random data is added before hashing.
+
+Benefits:
+
+- Defends against rainbow table attacks
+- Produces unique hashes
+
+### Multi-Factor Authentication (MFA)
+
+Requires users to verify their identity using multiple factors.
+
+Examples:
+
+- Password + OTP
+- Password + Fingerprint
+
+Benefits:
+
+- Reduces account takeover risks
+- Mitigates brute force attacks
+
+### CAPTCHA and reCAPTCHA
+
+Used to distinguish human users from bots.
+
+Benefits:
+
+- Prevents automated attacks
+- Reduces credential stuffing attempts
+
+### Password Policies
+
+Examples:
+
+- Minimum password length
+- Password complexity requirements
+- Account lockout policies
+- Password reuse restrictions
 
 ---
 
-## Risk Assessment Activity
+# Operating System Hardening
 
-### Skills Practiced
+OS Hardening is the process of strengthening systems by reducing vulnerabilities and minimizing attack surfaces.
 
-- Risk identification
-- Security recommendations
-- Hardening strategies
-- Security documentation
+## Common Hardening Tasks
+
+- Patch Updates
+- Baseline Configurations
+- Configuration Reviews
+- Password Enforcement
+- MFA Implementation
+- Disable Unused Ports
+- Remove Unused Applications
+- Access Control Reviews
+- Hardware and Software Disposal
+
+### Physical Security Hardening
+
+Examples:
+
+- Security Cameras
+- Security Guards
+- Controlled Facility Access
 
 ---
 
-## Hands-On Activities
+# Secure Testing Environments
 
-- Created a Security Risk Assessment Report
-- Applied the NIST CSF to incident analysis
-- Evaluated security hardening recommendations
+## Virtual Machines (VMs)
+
+Virtualized environments used to safely execute software.
+
+Common Uses:
+
+- Malware Analysis
+- Vulnerability Testing
+- Security Tool Testing
+
+Advantages:
+
+- Isolation
+- Snapshot Recovery
+- Safe Experimentation
 
 ---
 
-## Lessons Learned
+## Sandboxes
 
-- Misconfiguration is a major cloud security risk
-- IAM is critical for controlling access
-- Visibility enables faster threat detection
-- Security frameworks improve consistency
-- Hardening reduces attack opportunities
+Controlled environments used to safely execute suspicious software.
+
+Common Uses:
+
+- Malware Analysis
+- Patch Testing
+- Attack Simulations
+
+Advantages:
+
+- Reduced risk to production systems
+- Safe testing environment
+
+---
+
+# Defense in Depth
+
+Defense in Depth uses multiple security controls to protect organizational resources.
+
+Example Architecture:
+
+Firewall
+↓
+IDS
+↓
+IPS
+↓
+SIEM
+
+Benefits:
+
+- Layered protection
+- Reduced single points of failure
+- Improved detection and response
+
+---
+
+# Network Security Technologies
+
+## Firewall
+
+Filters network traffic according to predefined rules.
+
+Functions:
+
+- Traffic Filtering
+- Port Filtering
+- Network Boundary Protection
+
+---
+
+## Intrusion Detection System (IDS)
+
+Detects and alerts on suspicious activity.
+
+Characteristics:
+
+- Signature Detection
+- Anomaly Detection
+- Alert Generation
+
+Limitations:
+
+- Does not block attacks
+
+---
+
+## Intrusion Prevention System (IPS)
+
+Detects and actively blocks malicious activity.
+
+Features:
+
+- Real-Time Prevention
+- Traffic Blocking
+- Automated Response
+
+Risks:
+
+- False Positives
+- Potential Connectivity Disruption
+
+---
+
+## Security Information and Event Management (SIEM)
+
+Centralized platform that aggregates security logs and events.
+
+Examples:
+
+- Google Chronicle
+- Splunk
+
+Benefits:
+
+- Log Correlation
+- Threat Detection
+- Centralized Monitoring
+- Incident Investigation
+
+---
+
+# Network Hardening Techniques
+
+## Port Filtering
+
+Allow only necessary ports.
+
+Benefits:
+
+- Reduced attack surface
+- Improved traffic control
+
+---
+
+## Network Segmentation
+
+Separates systems into isolated subnetworks.
+
+Benefits:
+
+- Limits lateral movement
+- Reduces breach impact
+- Supports least privilege access
+
+---
+
+## Network Access Privileges
+
+Controls who can access specific resources.
+
+Benefits:
+
+- Restricts unauthorized access
+- Reduces insider threats
+
+---
+
+# Activity 1 - Security Incident Investigation
+
+## Objective
+
+Analyze suspicious website activity and investigate malicious network traffic.
+
+## Tasks Performed
+
+- Reviewed tcpdump traffic logs
+- Analyzed DNS requests
+- Investigated HTTP traffic
+- Identified suspicious redirects
+- Documented incident findings
+
+## Skills Developed
+
+- Packet Analysis
+- Log Analysis
+- DNS Investigation
+- HTTP Investigation
+- Incident Reporting
+- Root Cause Analysis
+
+---
+
+# Activity 2 - Security Risk Assessment
+
+## Scenario
+
+A social media organization experienced a major data breach.
+
+Identified vulnerabilities:
+
+- Shared employee passwords
+- Default administrator password
+- Weak firewall configuration
+- No MFA implementation
+
+## Tasks Performed
+
+- Vulnerability Identification
+- Risk Assessment
+- Security Control Selection
+- Mitigation Planning
+- Security Report Writing
+
+## Recommended Controls
+
+- MFA
+- Password Policies
+- Firewall Maintenance
+- Port Filtering
+- Network Access Privileges
+- Log Monitoring
+
+## Skills Developed
+
+- Risk Assessment
+- Security Documentation
+- Security Recommendations
+- Security Policy Thinking
+
+---
+
+# Key Skills Demonstrated
+
+## Technical Skills
+
+- Authentication Security
+- Security Hardening
+- Firewall Management
+- IDS / IPS Concepts
+- SIEM Monitoring
+- Log Analysis
+- Vulnerability Assessment
+- Network Security
+
+## Analytical Skills
+
+- Incident Investigation
+- Root Cause Analysis
+- Security Risk Assessment
+- Threat Evaluation
+
+## Professional Skills
+
+- Security Documentation
+- Technical Communication
+- Risk-Based Thinking
+- Security Reporting
+
+---
+
+# Reflection
+
+Security is not a single technology but a layered process of prevention, detection, response, and continuous improvement.
+
+This module strengthened my understanding of how organizations harden systems, monitor networks, investigate incidents, assess risks, and implement security controls to reduce the likelihood and impact of cyber attacks.
