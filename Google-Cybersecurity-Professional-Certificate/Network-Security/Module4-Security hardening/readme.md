@@ -1,67 +1,97 @@
-# Security Hardening
+# Course 3: Connect and Protect – Networks and Network Security
 
-## Overview
+## Module 4: Security Hardening
 
-Learned how organizations strengthen security through risk management, cloud security controls, identity and access management (IAM), and security hardening strategies.
+### Overview
 
-Focused on reducing attack surfaces, securing cloud resources, and applying cybersecurity frameworks to improve organizational security posture.
+This module focused on strengthening organizational security through authentication hardening, operating system hardening, network hardening, layered defenses, and risk assessment.
 
 ---
 
-## Concepts Covered
+## Topics Studied
 
-- Cloud Security
-- Identity and Access Management (IAM)
-- Shared Responsibility Model
-- Attack Surface Management
-- Zero-Day Attacks
-- Security Visibility & Monitoring
-- Security Hardening
-- NIST Cybersecurity Framework (CSF)
+### Authentication Security
+
+- Brute Force Attacks
+- Dictionary Attacks
+- Password Policies
+- Hashing and Salting
+- MFA and 2FA
+- CAPTCHA and reCAPTCHA
+
+### Operating System Hardening
+
+- Patch Management
+- Baseline Configurations
+- Access Control
+- Hardening Best Practices
+- Physical Security Controls
+
+### Network Security
+
+- Firewall Technologies
+- Intrusion Detection Systems (IDS)
+- Intrusion Prevention Systems (IPS)
+- Security Information and Event Management (SIEM)
+- Network Segmentation
+- Port Filtering
+
+### Security Operations
+
+- Incident Investigation
+- Log Analysis
+- Security Reporting
 - Risk Assessment
 
 ---
 
-## Tools & Frameworks
+## Hands-On Activities
 
-- NIST CSF
-- Security Risk Assessment Reports
-- Cloud Monitoring Tools
-- Flow Logs
-- Packet Monitoring
+### Security Incident Investigation
 
----
-
-## Hands-On Experience
-
-### Cloud Security Analysis
-- Evaluated cloud-specific security risks
-- Identified responsibilities shared between organizations and cloud providers
-- Analyzed IAM and configuration risks
+- Analyzed tcpdump logs
+- Investigated DNS and HTTP traffic
+- Identified suspicious redirects
+- Produced a Security Incident Report
+- Recommended brute force mitigations
 
 ### Security Risk Assessment
-- Assessed organizational security risks
-- Recommended hardening controls
-- Developed remediation strategies
 
-### NIST CSF Application
-- Applied Identify, Protect, Detect, Respond, and Recover functions
-- Structured incident analysis using a cybersecurity framework
+- Analyzed organizational vulnerabilities
+- Evaluated existing security weaknesses
+- Recommended network hardening controls
+- Created a Security Risk Assessment Report
 
 ---
 
-## Skills Demonstrated
+## Skills Developed
 
-- Risk Assessment
+### Technical Skills
+
+- Network Security
 - Security Hardening
-- Cloud Security Fundamentals
-- Identity and Access Management
-- Security Monitoring
-- Incident Analysis
-- Security Documentation
+- Firewall Concepts
+- IDS / IPS Fundamentals
+- SIEM Monitoring
+- Vulnerability Assessment
+- Authentication Security
+
+### Analytical Skills
+
+- Security Incident Investigation
+- Root Cause Analysis
+- Threat Evaluation
+- Risk Assessment
+
+### Professional Skills
+
+- Technical Documentation
+- Security Reporting
+- Security Recommendations
+- Risk Communication
 
 ---
 
 ## Key Takeaway
 
-Developed foundational knowledge of cloud security, risk management, and security hardening while applying structured frameworks to improve organizational defenses.
+This module demonstrated how layered security controls, proactive hardening practices, effective monitoring, and structured risk assessments work together to improve an organization's security posture and reduce the likelihood of future cyber attacks.
